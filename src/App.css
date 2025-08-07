@@ -5,7 +5,7 @@
 }
 
 *{
-  font-family: myfont;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .landing{
@@ -27,7 +27,7 @@
 .vision{
   width: 100vw;
   height: 70vh;
-  background: url(../src/assets/images/vision22.jpg) rgba(12, 68, 3, 0.616);
+  background: url(../src/assets/images/vision22.jpg) rgba(0, 0, 0, 0.616);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

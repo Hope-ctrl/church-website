@@ -1,11 +1,11 @@
 const OurVision = ()=>{
     return(
         <div className="vision">
-            <p>
+            <p className="text-[50px] font-bold">
                 OUR VISION
             </p>
             <div className="w-[100px] h-[2px] bg-[white]"></div>
-            <p className="text-center">
+            <p className="text-center lg:w-[50%]">
                 Our core values are more than just words, they are ideals on which we as a church place high value. They are what help guide our actions and help us stay on target to what God is doing through His church.
             </p>
         </div>

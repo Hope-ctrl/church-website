@@ -3,7 +3,7 @@ const Landing = ()=>{
         <div>
             <div className="landing">
                 <p className="text-[30px] md:text-[40px] text-center ">
-                    Welcome to GCEM
+                    Welcome to CGEM
                 </p>
                 <div className="w-[100px] h-[2px] bg-[#70e000]">
 
