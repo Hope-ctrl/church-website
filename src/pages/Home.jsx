@@ -7,8 +7,7 @@ import WeeklyActivities from "./homeSections/WeeklyActivities";
 
 const Home = ()=>{
     return(
-        <div>
-            <Header/>
+        <div className="bg-black">
             <Landing/>
             <WeeklyActivities/>
             <Expectation/>

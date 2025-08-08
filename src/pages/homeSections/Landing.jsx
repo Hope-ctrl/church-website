@@ -8,7 +8,7 @@ const Landing = ()=>{
                 <div className="w-[100px] h-[2px] bg-[#70e000]">
 
                 </div>
-                <p className="md:text-[20px] text-center">
+                <p className="md:text-[20px] text-center lg:w-[50%] ">
                     where faith, family, and love come together. Whether you're searching for hope, community,  or a deeper relationship with God, there's a place for you here. We gather to worship, grow, and serve together in Christ's love.
                 </p>
             </div>

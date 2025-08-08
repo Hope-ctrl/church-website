@@ -1,27 +1,35 @@
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
 
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);
 
     const handleMenu = ()=> setIsOpen(!isOpen);
+
+    const location = useLocation();
+
+    useEffect(()=>{
+        setIsOpen(false)
+    }, [location.pathname])
+
     return(
         <div >
-            <div className="w-[100%] h-[50px] lg:flex justify-between items-center px-[40px] hidden text-[white] bg-[#ffffff56] fixed z-50">
+            <div className="w-[100%] h-[50px] lg:flex justify-between items-center px-[40px] hidden text-[white] bg-[#000000a1] z-50">
                 <div className="w-[200px]">
                 <p>
                     CGEM
                 </p>
             </div>
             <ul className="w-[300px] h-[100%] flex justify-center items-center gap-[40px]">
-                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Home</li>
-                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Gallery</li>
-                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Sermon</li>
+                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/">Home</Link></li>
+                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/gallery">Gallery</Link></li>
+                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/sermon">Sermon</Link></li>
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Contact</li>
             </ul>
             </div>
-            <div className="lg:hidden w-[100%] h-[70px] flex justify-between items-center text-white fixed z-50 bg-[#ffffff56]">
+            <div className="lg:hidden w-[100%] h-[70px] flex justify-between items-center text-white  z-50 bg-[#000000a9]">
               <div className="w-[200px] h-[100%] flex justify-center items-center">
                 <p className="text-[30px]">
                    CGEM
@@ -38,9 +46,9 @@ const Header = ()=>{
                         </div>
 }
                     <nav className="flex flex-col p-6 space-y-4">
-          <a href="/" className="text-lg font-medium">Home</a>
-          <a href="/about" className="text-lg font-medium">About</a>
-          <a href="/services" className="text-lg font-medium">Services</a>
+          <a href="/" className="text-lg font-medium"><Link to="/">Home</Link></a>
+          <a href="/about" className="text-lg font-medium"><Link to="/gallery">Gallery</Link></a>
+          <a href="/services" className="text-lg font-medium"><Link to="/sermon">Sermon</Link></a>
           <a href="/contact" className="text-lg font-medium">Contact</a>
         </nav>
                 </div>
