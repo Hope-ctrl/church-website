@@ -16,7 +16,7 @@ const Header = ()=>{
 
     return(
         <div >
-            <div className="w-[100%] h-[50px] lg:flex justify-between items-center px-[40px] hidden text-[white] bg-[#000000a1] z-50">
+            <div className="w-[100%] h-[70px] lg:flex justify-between items-center px-[40px] hidden text-[black] bg-[#ffffff] z-50">
                 <div className="w-[200px]">
                 <p>
                     CGEM
@@ -29,7 +29,7 @@ const Header = ()=>{
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Contact</li>
             </ul>
             </div>
-            <div className="lg:hidden w-[100%] h-[70px] flex justify-between items-center text-white  z-50 bg-[#000000a9]">
+            <div className="lg:hidden w-[100%] h-[70px] flex justify-between items-center text-black  z-50 bg-[#ffffff]">
               <div className="w-[200px] h-[100%] flex justify-center items-center">
                 <p className="text-[30px]">
                    CGEM

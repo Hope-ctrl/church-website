@@ -1,23 +1,7 @@
 const WeeklyActivities = ()=>{
     return(
         <div className="flex justify-center items-center w-[100vw] h-[90vh] flex-col gap-[40px] mb-[20px] lg:mb-[40px]">
-            <div className="flex justify-center items-center flex-col ">
-                <p className="text-center text-[20px] text-[#70e000]">
-                JOIN US FOR SERVICE
-            </p>
-            <p className="text-white">
-                SUNDAY SERVICE: 9:30 - 11:00
-            </p>
-            <p className="text-white">
-                TUESDAYS: BIBLE STUDY: 5:00 - 6:30
-            </p>
-            <p className="text-white">
-                WEDNESDAY: SOLUTION HOUR: 8:00 - 10:00
-            </p>
-             <p className="text-white">
-                FRIDAY: REVIVAL HOUR: 5:00 - 6:30
-            </p>
-            </div>
+            
 
            <div className="w-[90%] lg:w-[90%] h-[60%] border-2">
         <iframe

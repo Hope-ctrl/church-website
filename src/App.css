@@ -1,11 +1,14 @@
 @import "tailwindcss";
 @font-face {
   font-family: myfont;
-  src: url(../src/assets/fonts/ClashGrotesk-Medium.otf);
+  src: url(../src/assets/fonts/Satoshi-Variable.ttf);
 }
+@import "@fontsource/poppins"; 
+@import "@fontsource/poppins/700.css"; 
+
 
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: myfont;
 }
 
 .landing{

@@ -8,13 +8,13 @@ const OurVision = ()=>{
                     </div>
                     <div className="w-[100%] h-[420px] absolute z-10 top-0 left-0 bg-gradient-to-b from-transparent to-black flex items-end pb-[50px] pl-[20px] lg:pl-[50px]">
                         <div className="w-[100%] h-[70px] flex gap-3">
-                            <div className="w-[2px] h-[70px]  bg-[#70e000] "></div>
+                            <div className="w-[2px] h-[70px]  bg-[#FF9863] "></div>
                             <p className="text-[30px] lg:text-[50px] capitalize font-bold">
                             OUR VISION
                         </p>
                         </div>
                     </div>
-                   <p className=" lg:w-[50%] pl-[20px] lg:pl-[50px] mt-[50px]">
+                   <p className=" lg:w-[50%] pl-[20px] lg:pl-[50px] mt-[50px] text-black">
                 Our core values are more than just words, they are ideals on which we as a church place high value. They are what help guide our actions and help us stay on target to what God is doing through His church.
             </p>
                     

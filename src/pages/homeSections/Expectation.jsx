@@ -14,15 +14,15 @@ const Expectation = ()=>{
             <div className="w-[100%] h-[400px] flex justify-center items-start overflow-hidden">
                 <img src={expectImage} alt="" className="w-full h-[100%] object-cover"/>
             </div>
-            <div className="w-[100%] h-[420px] absolute z-10 top-0 left-0 bg-gradient-to-b from-transparent to-black flex items-end pb-[50px] pl-[20px] lg:pl-[50px]">
+            <div className="w-[100%] h-[400px] absolute z-10 top-0 left-0 bg-gradient-to-b from-transparent to-[black] flex items-end pb-[50px] pl-[20px] lg:pl-[50px]">
                 <div className="w-[100%] h-[70px] flex gap-3">
-                    <div className="w-[2px] h-[70px]  bg-[#70e000] "></div>
-                    <p className="text-[30px] lg:text-[50px]  capitalize font-bold">
+                    <div className="w-[2px] h-[70px]  bg-[#FF9863] "></div>
+                    <p className="text-[30px]  lg:text-[50px]  capitalize font-bold">
                     what to expect 
                 </p>
                 </div>
             </div>
-            <ul className="pl-[20px] lg:pl-[50px] mt-[50px] list-disc">
+            <ul className="pl-[20px] lg:pl-[50px] mt-[50px] list-disc text-black">
                 {
                     expectations.map((items, index)=>(
                         <li key={index} className="">{items}</li>

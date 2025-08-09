@@ -3,8 +3,8 @@ import choir from "../../assets/images/choir.jpg"
 const Choir = ()=>{
     return(
        <div className="w-[90vw] mx-auto h-[70vh] lg:h-[90vh] lg:py-[80px] mb-[30px] flex justify-center items-center">
-            <div className="w-[100%] h-[80%] flex justify-center flex-col gap-[20px] items-center lg:items-start lg:w-[50%] border-e-red-500 p-[20px] text-white">
-                <p className="text-[30px] uppercase text-center lg:text-left font-bold text-[#70e000]">
+            <div className="w-[100%] h-[80%] flex justify-center flex-col gap-[20px] items-center lg:items-start lg:w-[50%] border-e-red-500 p-[20px] text-black">
+                <p className="text-[30px] uppercase text-center lg:text-left font-bold text-[#FF9863]">
                 "Lift Every Voice in Praise."
                 </p>
                 <p className="text-center lg:text-left">
