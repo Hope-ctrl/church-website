@@ -17,15 +17,16 @@ const Header = ()=>{
     return(
         <div >
             <div className="w-[100%] h-[70px] lg:flex justify-between items-center px-[40px] hidden text-[black] bg-[#ffffff] z-50">
-                <div className="w-[200px]">
+                <div className="w-[100px]">
                 <p>
                     CGEM
                 </p>
             </div>
-            <ul className="w-[300px] h-[100%] flex justify-center items-center gap-[40px]">
+            <ul className="w-[500px] h-[100%] flex justify-center items-center gap-[40px]">
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/">Home</Link></li>
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/gallery">Gallery</Link></li>
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/sermon">Sermon</Link></li>
+                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/events">Events</Link></li>
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Contact</li>
             </ul>
             </div>
@@ -49,6 +50,7 @@ const Header = ()=>{
           <a href="/" className="text-lg font-medium"><Link to="/">Home</Link></a>
           <a href="/about" className="text-lg font-medium"><Link to="/gallery">Gallery</Link></a>
           <a href="/services" className="text-lg font-medium"><Link to="/sermon">Sermon</Link></a>
+          <a href="/services" className="text-lg font-medium"><Link to="/events">Events</Link></a>
           <a href="/contact" className="text-lg font-medium">Contact</a>
         </nav>
                 </div>

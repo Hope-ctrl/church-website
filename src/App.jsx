@@ -6,6 +6,7 @@ import ImageGallery from './pages/Gallery'
 import { Routes, Route } from 'react-router'
 import Sermon from './pages/Sermon'
 import Footer from './components/Footer'
+import Events from './pages/Events'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/gallery' element={<ImageGallery/>}/>
       <Route path='/sermon' element={<Sermon/>}/>
+      <Route path='/events' element={<Events/>}/>
     </Routes>
     <Footer/>
     </div>
