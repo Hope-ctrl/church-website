@@ -6,6 +6,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);
 
+    const [more, setMore] = useState(false);
+
     const handleMenu = ()=> setIsOpen(!isOpen);
 
     const location = useLocation();
@@ -16,7 +18,7 @@ const Header = ()=>{
 
     return(
         <div >
-            <div className="w-[100%] h-[70px] lg:flex justify-between items-center px-[40px] hidden text-[black] bg-[#ffffff] z-50">
+            <div className="w-[100%] h-[70px] lg:flex justify-between items-center px-[60px] hidden text-[black] bg-[#ffffff] z-50">
                 <div className="w-[100px]">
                 <p>
                     CGEM
@@ -27,7 +29,18 @@ const Header = ()=>{
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/gallery">Gallery</Link></li>
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/sermon">Sermon</Link></li>
                 <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out"><Link to="/events">Events</Link></li>
-                <li className="cursor-pointer hover:opacity-[0.5] transition-all duration-75 ease-in-out">Contact</li>
+                <li className="cursor-pointer transition-all duration-75 ease-in-out relative" onMouseMove={()=>setMore(true)} >
+                    <p className="hover:opacity-[0.5]">
+                        Contact
+                    </p>
+                    {
+                        more && <ul className="w-[150px] h-[70px] absolute top-7 left-0 appear rounded-xl bg-white shadow-xl" onMouseLeave={()=>setMore(false)}>
+                            <li className="cursor-pointer w-full h-[50%] flex items-center hover:bg-[#e3e3e3] transition-all duration-75 ease-in-out pl-[10px]"><Link to="/contact">contact us</Link></li>
+                            <li className="cursor-pointer w-full h-[50%] rounded-b-xl hover:bg-[#e3e3e3] transition-all duration-75 ease-in-out pl-[10px]"><Link to="/prayerRequest">prayer request</Link></li>
+                    </ul>
+                    }
+
+                </li>
             </ul>
             </div>
             <div className="lg:hidden w-[100%] h-[70px] flex justify-between items-center text-black  z-50 bg-[#ffffff]">
@@ -47,11 +60,13 @@ const Header = ()=>{
                         </div>
 }
                     <nav className="flex flex-col p-6 space-y-4">
-          <a href="/" className="text-lg font-medium"><Link to="/">Home</Link></a>
-          <a href="/about" className="text-lg font-medium"><Link to="/gallery">Gallery</Link></a>
-          <a href="/services" className="text-lg font-medium"><Link to="/sermon">Sermon</Link></a>
-          <a href="/services" className="text-lg font-medium"><Link to="/events">Events</Link></a>
-          <a href="/contact" className="text-lg font-medium">Contact</a>
+          <li className="text-lg font-medium list-none"><Link to="/">Home</Link></li>
+          <li className="text-lg font-medium list-none"><Link to="/gallery">Gallery</Link></li>
+          <li className="text-lg font-medium list-none"><Link to="/sermon">Sermon</Link></li>
+          <li className="text-lg font-medium list-none"><Link to="/events">Events</Link></li>
+          <li className="text-lg font-medium list-none"><Link to="/contact">contact</Link></li>
+          <li className="text-lg font-medium list-none"><Link to="/prayerRequest">Prayer Request</Link></li>
+          
         </nav>
                 </div>
             </div>

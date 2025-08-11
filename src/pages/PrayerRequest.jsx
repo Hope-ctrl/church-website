@@ -1,47 +1,17 @@
 import React from "react";
 import { FaEnvelope, FaLocationArrow, FaPhone } from "react-icons/fa6";
 
-export default function ContactForm() {
+const PrayerRequest = ()=> {
   return (
     <div className="bg-white min-h-screen flex justify-center items-center px-4">
       <div className="bg-white shadow-lg border-1 rounded-lg w-full max-w-5xl flex flex-col md:flex-row overflow-hidden">
 
-        {/* Left Section */}
-        <div
-          className="md:w-1/3 p-8 text-white"
-          style={{ backgroundColor: "#FF9863" }}
-        >
-          <h2 className="text-lg font-semibold mb-4">Contact Information</h2>
-          <p className="text-sm mb-6">
-            We’ll create high-quality linkable content and build at least 40
-            high-authority links to each asset.
-          </p>
-          <div className="space-y-4">
-            <p className="flex items-center gap-2">
-              <FaPhone/> <span>+8801777877688</span>
-            </p>
-            <p className="flex items-center gap-2">
-              <FaPhone/> <span>+98887735366</span>
-            </p>
-            <p className="flex items-center gap-2">
-              <FaEnvelope/> <span>support@uragency.com</span>
-            </p>
-            <p className="flex items-center gap-2">
-              <FaLocationArrow/> <span>New York, USA</span>
-            </p>
-          </div>
-        </div>
 
         {/* Right Section */}
-        <div className="md:w-2/3 p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">
-            Get In Touch
+        <div className="md:w-full p-8">
+          <h2 className="text-3xl mb-[40px] font-bold text-gray-800 ">
+            Prayer Request
           </h2>
-          <p className="text-gray-600 mb-6 text-sm">
-            We’ll create high-quality linkable content and build at least 40
-            high-authority links to each asset, paving the way for you to grow
-            your rankings, improve brand.
-          </p>
 
           <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Name */}
@@ -66,19 +36,7 @@ export default function ContactForm() {
                 placeholder="hello@nurency.com"
                 className="w-full border-b border-gray-300 focus:border-[#FF9863] outline-none py-2"
               />
-            </div>
-
-            {/* Subject */}
-            <div className="md:col-span-2">
-              <label className="block text-gray-700 text-sm font-semibold mb-1">
-                Your Subject
-              </label>
-              <input
-                type="text"
-                placeholder="I want to hire you quickly"
-                className="w-full border-b border-gray-300 focus:border-[#FF9863] outline-none py-2"
-              />
-            </div>
+            </div>  
 
             {/* Message */}
             <div className="md:col-span-2">
@@ -108,3 +66,5 @@ export default function ContactForm() {
     </div>
   );
 }
+
+export default PrayerRequest;

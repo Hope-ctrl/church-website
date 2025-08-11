@@ -45,7 +45,7 @@ const  ImageGallery =()=> {
 
   return (
     <div className="bg-[white]">
-      <p className="text-[50px] h-[100px] flex p-[20px] items-center font-bold">
+      <p className="text-[50px] h-[100px] flex p-[20px] items-center font-bold  ">
       Gallery
     </p>
     <div className="lg:columns-3 columns-2 gap-4 p-[15px] md:p-[20px]"> {/* masonry columns */}
