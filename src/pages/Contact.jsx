@@ -13,8 +13,7 @@ export default function ContactForm() {
         >
           <h2 className="text-lg font-semibold mb-4">Contact Information</h2>
           <p className="text-sm mb-6">
-            We’ll create high-quality linkable content and build at least 40
-            high-authority links to each asset.
+            We’ll share uplifting messages and build strong connections to help grow your faith and strengthen our church community.
           </p>
           <div className="space-y-4">
             <p className="flex items-center gap-2">
@@ -27,7 +26,7 @@ export default function ContactForm() {
               <FaEnvelope/> <span>support@uragency.com</span>
             </p>
             <p className="flex items-center gap-2">
-              <FaLocationArrow/> <span>New York, USA</span>
+              <FaLocationArrow/> <span>Agric Ojo, Lagos State Nigeria</span>
             </p>
           </div>
         </div>
@@ -38,9 +37,7 @@ export default function ContactForm() {
             Get In Touch
           </h2>
           <p className="text-gray-600 mb-6 text-sm">
-            We’ll create high-quality linkable content and build at least 40
-            high-authority links to each asset, paving the way for you to grow
-            your rankings, improve brand.
+            We’d love to connect with you. Whether you have questions about our services, want to learn more about our ministries, or wish to get involved, our team is here to help.
           </p>
 
           <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
