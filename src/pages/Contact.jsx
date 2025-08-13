@@ -22,7 +22,7 @@ export default function ContactForm() {
             <p className="flex items-center gap-2">
               <FaPhone/> <span>+98887735366</span>
             </p>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2">~
               <FaEnvelope/> <span>support@uragency.com</span>
             </p>
             <p className="flex items-center gap-2">
